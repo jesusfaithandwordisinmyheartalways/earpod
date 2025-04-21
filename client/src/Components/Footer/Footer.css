@@ -1,0 +1,22 @@
+
+
+
+
+
+.footer-container {
+    width: 100vw;
+    overflow: hidden;
+    background-color: whitesmoke;
+   padding: 1em;
+    position: relative;
+    bottom: 0px;
+}
+
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 3rem;
+}

@@ -1,0 +1,125 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Neucha&display=swap');
+
+
+.offer-container {
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+    background: #1a1a1a;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    padding: 40px 0;
+  }
+  
+  .offer-container.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .offer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  .offer-wrapper h3 {
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s ease;
+  }
+  
+  .offer-wrapper h3.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .offer-wrapper-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto 0;
+    max-width: 1000px;
+    gap: 20px;
+  }
+  
+  .offer-wrapper-two img {
+    width: 310px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  
+  .offer-wrapper-two div {
+    opacity: 0;
+  }
+  
+  .offer-wrapper-two .img-left {
+    transform: translateX(-200px);
+    animation: slideFromLeft 1s forwards ease-in-out;
+  }
+  
+  .offer-wrapper-two .img-center {
+    transform: scale(0.9);
+    animation: fadeIn 1s forwards ease-in-out;
+  }
+  
+  .offer-wrapper-two .img-right {
+    transform: translateX(200px);
+    animation: slideFromRight 1s forwards ease-in-out;
+  }
+  
+  .offer-wrapper-two .img-left,
+  .offer-wrapper-two .img-center,
+  .offer-wrapper-two .img-right {
+    opacity: 1;
+  }
+  
+  .offer-wrapper-two img:hover {
+    animation: jiggle 0.3s ease-in-out infinite alternate;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Keyframes */
+  @keyframes slideFromLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideFromRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes jiggle {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }

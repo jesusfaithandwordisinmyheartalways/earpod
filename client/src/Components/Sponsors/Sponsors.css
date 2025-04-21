@@ -1,0 +1,89 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Neucha&display=swap');
+
+
+/* Smooth entrance */
+.sponsors-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    height: 410px;
+  }
+  
+  .sponsors-container.show-sponsors {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Slide in h3 from right */
+  .slide-in-heading {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease;
+  }
+  
+  .slide-in-heading.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Marquee wrapper setup */
+  .sponsors-wrapper-two {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+  }
+  
+
+
+  .marquee-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: none;
+  }
+  
+  .marquee-animate {
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+
+  
+  /* Image style with box shadow effect */
+  .marquee-track img {
+    width: 410px;
+    object-fit: contain;
+    box-shadow: 0 0 10px green, 0 0 15px black;
+    transition: transform 0.3s ease;
+  }
+  
+  .marquee-track img:hover {
+    transform: scale(1.05);
+  }
+
+
+
+
+  .sponsors-wrapper h3 {
+    font-size: 3rem;
+    font-family: "Modern Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
