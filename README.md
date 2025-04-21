@@ -10,4 +10,5 @@ Features:
 
    Screenshots:
 
-   ![Land page](https://github.com/user-attachments/assets/9c561c13-5c9b-46a8-840d-c8c8da02e332)
+   
+![Land page](https://github.com/user-attachments/assets/af71226f-c577-4ddc-ba27-4b86634f80b3)
